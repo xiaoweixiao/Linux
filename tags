@@ -1,0 +1,167 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+IPC_KEY	ipc/ipc/memshare_c.c	23;"	d	file:
+IPC_KEY	ipc/ipc/memshare_s.c	23;"	d	file:
+IPC_KEY	ipc/ipc/msgqueue_c.c	35;"	d	file:
+IPC_KEY	ipc/ipc/msgqueue_s.c	35;"	d	file:
+IPC_KEY	ipc/ipc/sem.c	18;"	d	file:
+IPC_KEY	ipc/ipc/sem1.c	9;"	d	file:
+IPC_KEY	ipc/les2/memshare_c.c	20;"	d	file:
+IPC_KEY	ipc/les2/memshare_s.c	20;"	d	file:
+IPC_KEY	ipc/les2/msgq_c.c	15;"	d	file:
+IPC_KEY	ipc/les2/msgq_s.c	15;"	d	file:
+IPC_KEY	ipc/les3/sem.c	17;"	d	file:
+IPC_KEY	ipc/les3/sem1.c	11;"	d	file:
+TYPE_C	ipc/ipc/msgqueue_c.c	38;"	d	file:
+TYPE_C	ipc/ipc/msgqueue_s.c	38;"	d	file:
+TYPE_C	ipc/les2/msgq_c.c	18;"	d	file:
+TYPE_C	ipc/les2/msgq_s.c	18;"	d	file:
+TYPE_S	ipc/ipc/msgqueue_c.c	37;"	d	file:
+TYPE_S	ipc/ipc/msgqueue_s.c	37;"	d	file:
+TYPE_S	ipc/les2/msgq_c.c	17;"	d	file:
+TYPE_S	ipc/les2/msgq_s.c	17;"	d	file:
+__MY_TEST_H	base-io/lib/test.h	2;"	d
+__buf	ipc/ipc/sem.c	/^    struct seminfo  *__buf;  \/* Buffer for IPC_INFO$/;"	m	union:semun	typeref:struct:semun::seminfo	file:
+__buf	ipc/ipc/sem1.c	/^    struct seminfo  *__buf;  \/* Buffer for IPC_INFO$/;"	m	union:semun	typeref:struct:semun::seminfo	file:
+__buf	ipc/les3/sem.c	/^    struct seminfo  *__buf;  \/* Buffer for IPC_INFO$/;"	m	union:semun	typeref:struct:semun::seminfo	file:
+a	signal/reinsert.c	/^int a=10,b=20;$/;"	v
+argc	pro_c/les2/myshell.c	/^int argc;$/;"	v
+argc	pro_c/pro_ctrl/myshell.c	/^int argc;$/;"	v
+argv	pro_c/les2/myshell.c	/^char* argv[32];$/;"	v
+argv	pro_c/pro_ctrl/myshell.c	/^char *argv[32];$/;"	v
+array	ipc/ipc/sem.c	/^    unsigned short  *array;  \/* Array for GETALL, SETALL *\/$/;"	m	union:semun	file:
+array	ipc/ipc/sem1.c	/^    unsigned short  *array;  \/* Array for GETALL, SETALL *\/$/;"	m	union:semun	file:
+array	ipc/les3/sem.c	/^    unsigned short  *array;  \/* Array for GETALL, SETALL *\/$/;"	m	union:semun	file:
+b	signal/reinsert.c	/^int a=10,b=20;$/;"	v
+buf	ipc/ipc/sem.c	/^    struct semid_ds *buf;    \/* Buffer for IPC_STAT, IPC_SET *\/$/;"	m	union:semun	typeref:struct:semun::semid_ds	file:
+buf	ipc/ipc/sem1.c	/^    struct semid_ds *buf;    \/* Buffer for IPC_STAT, IPC_SET *\/$/;"	m	union:semun	typeref:struct:semun::semid_ds	file:
+buf	ipc/les3/sem.c	/^    struct semid_ds *buf;    \/* Buffer for IPC_STAT, IPC_SET *\/$/;"	m	union:semun	typeref:struct:semun::semid_ds	file:
+cond	pthread/les2/const.c	/^ pthread_cond_t cond;$/;"	v
+exec_cmd	pro_c/les2/myshell.c	/^int exec_cmd()$/;"	f
+exec_cmd	pro_c/pro_ctrl/myshell.c	/^int exec_cmd()$/;"	f
+g:loaded_vimcdoc	ipc/les2/vimcdoc-2.1.0/plugin/vimcdoc.vim	/^let g:loaded_vimcdoc = 1$/;"	v
+main	base-io/base_io/c_io.c	/^int main()$/;"	f
+main	base-io/base_io/fd_rule.c	/^int main()$/;"	f
+main	base-io/base_io/output.c	/^int main()$/;"	f
+main	base-io/base_io/s_io.c	/^int main()$/;"	f
+main	base-io/base_io/test.c	/^int main()$/;"	f
+main	base-io/fd.c	/^int main()$/;"	f
+main	base-io/lib/main.c	/^int main()$/;"	f
+main	base-io/output.c	/^int main()$/;"	f
+main	base-io/print.c	/^int main()$/;"	f
+main	base-io/rev-io.c	/^int main()$/;"	f
+main	base-io/sysio.c	/^int main()$/;"	f
+main	cmd/les2/test.c	/^int main()$/;"	f
+main	cmd/les2/test.s	/^main:$/;"	l
+main	cmd/tes.s	/^main:$/;"	l
+main	cmd/test.c	/^int main()$/;"	f
+main	ipc/ipc/fifo.c	/^int main()$/;"	f
+main	ipc/ipc/fifo_c.c	/^int main()$/;"	f
+main	ipc/ipc/memshare_c.c	/^int main()$/;"	f
+main	ipc/ipc/memshare_s.c	/^int main()$/;"	f
+main	ipc/ipc/msgqueue_c.c	/^int main()$/;"	f
+main	ipc/ipc/msgqueue_s.c	/^int main()$/;"	f
+main	ipc/ipc/pipe.c	/^int main()$/;"	f
+main	ipc/ipc/pipe1.c	/^int main()$/;"	f
+main	ipc/ipc/sem.c	/^int main()$/;"	f
+main	ipc/ipc/sem1.c	/^int main()$/;"	f
+main	ipc/les1/fifo.c	/^int main()$/;"	f
+main	ipc/les1/fifo_w.c	/^int main()$/;"	f
+main	ipc/les1/pipe.c	/^int main()$/;"	f
+main	ipc/les1/pipe1.c	/^int main(){$/;"	f
+main	ipc/les2/memshare_c.c	/^int main()$/;"	f
+main	ipc/les2/memshare_s.c	/^int main()$/;"	f
+main	ipc/les2/msgq_c.c	/^int main()$/;"	f
+main	ipc/les2/msgq_s.c	/^int main()$/;"	f
+main	ipc/les3/sem.c	/^int main(){$/;"	f
+main	ipc/les3/sem1.c	/^int main()$/;"	f
+main	makefile/main.c	/^int main()$/;"	f
+main	makefile/mian.c	/^int main()$/;"	f
+main	makefile/test.c	/^int main()$/;"	f
+main	pro/les5/fork.c	/^int main()$/;"	f
+main	pro/les5/main.c	/^int main()$/;"	f
+main	pro/les5/stat_c.c	/^int main()$/;"	f
+main	pro/les5/teachcode/fork.c	/^int main()$/;"	f
+main	pro/les5/teachcode/main.c	/^int main()$/;"	f
+main	pro/les5/teachcode/stat_c.c	/^int main()$/;"	f
+main	pro/les5/teachcode/test.c	/^int main()$/;"	f
+main	pro/les5/tmp.c	/^int main()$/;"	f
+main	pro/les5/zombie.c	/^int main()$/;"	f
+main	pro/les6/env.c	/^int main(int argc,char* argv[],char* env[])$/;"	f
+main	pro/process/env.c	/^int main(int argc, char *argv[], char *env[])$/;"	f
+main	pro/process/fork.c	/^int main()$/;"	f
+main	pro/process/main.c	/^int main()$/;"	f
+main	pro/process/stat_c.c	/^int main()$/;"	f
+main	pro/process/test.c	/^int main()$/;"	f
+main	pro/process/tmp.c	/^int main()$/;"	f
+main	pro_c/les1/main.c	/^int main()$/;"	f
+main	pro_c/les1/test.c	/^int main()$/;"	f
+main	pro_c/les1/vfork.c	/^int main()$/;"	f
+main	pro_c/les1/zombie.c	/^int main()$/;"	f
+main	pro_c/les2/argv.c	/^int main(int argc,char*argv[],char*env[])$/;"	f
+main	pro_c/les2/myshell.c	/^int main()$/;"	f
+main	pro_c/les2/test_exe.c	/^int main(int argc,char*argv[],char*env[])$/;"	f
+main	pro_c/pro_ctrl/myshell.c	/^int main()$/;"	f
+main	pro_c/pro_ctrl/param.c	/^int main(int argc, char *argv[])$/;"	f
+main	pro_c/pro_ctrl/test.c	/^int main()$/;"	f
+main	pro_c/pro_ctrl/test_exec.c	/^int main(int argc, char *argv[], char *env[])$/;"	f
+main	pro_c/pro_ctrl/vfork.c	/^int main()$/;"	f
+main	pro_c/pro_ctrl/waitpid.c	/^int main()$/;"	f
+main	pro_c/pro_ctrl/zombie.c	/^int main()$/;"	f
+main	pthread/create.c	/^int main()$/;"	f
+main	pthread/exit.c	/^int main()$/;"	f
+main	pthread/join.c	/^int main()$/;"	f
+main	pthread/les2/const.c	/^ int main()$/;"	f
+main	pthread/les2/ticket.c	/^int main()$/;"	f
+main	signal/creat.c	/^int main(){$/;"	f
+main	signal/mask.c	/^int main()$/;"	f
+main	signal/reinsert.c	/^int main()$/;"	f
+main	signal/signal.c	/^int main()$/;"	f
+msgbuf	ipc/ipc/msgqueue_c.c	/^struct msgbuf {$/;"	s	file:
+msgbuf	ipc/ipc/msgqueue_s.c	/^struct msgbuf {$/;"	s	file:
+msgbuf	ipc/les2/msgq_c.c	/^struct msgbuf{$/;"	s	file:
+msgbuf	ipc/les2/msgq_s.c	/^struct msgbuf{$/;"	s	file:
+mtext	ipc/ipc/msgqueue_c.c	/^    char mtext[1024];    \/* message data *\/$/;"	m	struct:msgbuf	file:
+mtext	ipc/ipc/msgqueue_s.c	/^    char mtext[1024];    \/* message data *\/$/;"	m	struct:msgbuf	file:
+mtext	ipc/les2/msgq_c.c	/^    char mtext[1024];$/;"	m	struct:msgbuf	file:
+mtext	ipc/les2/msgq_s.c	/^    char mtext[1024];$/;"	m	struct:msgbuf	file:
+mtype	ipc/ipc/msgqueue_c.c	/^    long mtype;       \/* message type, must be > 0 *\/$/;"	m	struct:msgbuf	file:
+mtype	ipc/ipc/msgqueue_s.c	/^    long mtype;       \/* message type, must be > 0 *\/$/;"	m	struct:msgbuf	file:
+mtype	ipc/les2/msgq_c.c	/^    long mtype;$/;"	m	struct:msgbuf	file:
+mtype	ipc/les2/msgq_s.c	/^    long mtype;$/;"	m	struct:msgbuf	file:
+mutex	pthread/les2/ticket.c	/^pthread_mutex_t mutex;$/;"	v
+param_parse	pro_c/les2/myshell.c	/^int param_parse(char* buff)$/;"	f
+param_parse	pro_c/pro_ctrl/myshell.c	/^int param_parse(char *buff)$/;"	f
+print	ipc/les3/sem1.c	/^void print()$/;"	f
+print_func	base-io/lib/test.c	/^void print_func()$/;"	f
+print_test	base-io/base_io/lib/test.c	/^void print_test()$/;"	f
+print_test	base-io/lib/test.c	/^void print_test()$/;"	f
+sale_noddle	pthread/les2/const.c	/^void *sale_noddle(void *arg)$/;"	f
+sem_P	ipc/ipc/sem.c	/^void sem_P(int id)$/;"	f
+sem_P	ipc/ipc/sem1.c	/^void sem_P(int id)$/;"	f
+sem_P	ipc/les3/sem.c	/^void sem_P(int id)$/;"	f
+sem_V	ipc/ipc/sem.c	/^void sem_V(int id)$/;"	f
+sem_V	ipc/ipc/sem1.c	/^void sem_V(int id)$/;"	f
+sem_V	ipc/les3/sem.c	/^void sem_V(int id)$/;"	f
+semun	ipc/ipc/sem.c	/^union semun {$/;"	u	file:
+semun	ipc/ipc/sem1.c	/^union semun {$/;"	u	file:
+semun	ipc/les3/sem.c	/^union semun {$/;"	u	file:
+sigcb	signal/reinsert.c	/^void sigcb(int signo)$/;"	f
+sigcb	signal/signal.c	/^void sigcb(int signo)$/;"	f
+sum	signal/reinsert.c	/^int sum()$/;"	f
+test	cmd/test.c	/^void test()$/;"	f
+test	makefile/test.c	/^void test()$/;"	f
+test_fun	pro_c/pro_ctrl/test.c	/^int test_fun()$/;"	f
+test_tmp	cmd/tmp.c	/^int test_tmp()$/;"	f
+test_tmp	makefile/tmp.c	/^int test_tmp()$/;"	f
+thr_start	pthread/create.c	/^void* thr_start(void*arg)$/;"	f
+thr_start	pthread/exit.c	/^void *thr_start(void *arg)$/;"	f
+ticket	pthread/les2/ticket.c	/^int ticket=100;$/;"	v
+val	ipc/ipc/sem.c	/^    int              val;    \/* Value for SETVAL *\/$/;"	m	union:semun	file:
+val	ipc/ipc/sem1.c	/^    int              val;    \/* Value for SETVAL *\/$/;"	m	union:semun	file:
+val	ipc/les3/sem.c	/^    int              val;    \/* Value for SETVAL *\/$/;"	m	union:semun	file:
+y_cow	pthread/les2/ticket.c	/^void* y_cow(void *arg)$/;"	f
