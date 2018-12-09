@@ -26,16 +26,15 @@ void *thr_write(void *arg)
         //pthread_rwlock_wrlock(&rwlock);//写独占
         //pthread_rwlock_rdlock(&rwlock);//读共享
         pthread_rwlock_wrlock(&rwlock);//写独占
-        /*
-        if (ticket > 0) {
-            usleep(100);
+
+        if (ticket > 0 ) {
+            sleep(5);
             ticket--;
             printf("ticket:%d\n", ticket);
         }
-        */
         printf("this is write!!\n");
         pthread_rwlock_unlock(&rwlock);
-        usleep(100000);
+        sleep(5);
     }
     return 0;
 }
@@ -43,16 +42,15 @@ void *thr_read(void *arg)
 {
     while(1) {
         pthread_rwlock_rdlock(&rwlock);
-        /*
+
         if (ticket > 0) {
-            usleep(100);
+            sleep(5);
             ticket--;
             printf("ticket:%d\n", ticket);
         }
-        */
         printf("this is read!!!\n");
         pthread_rwlock_unlock(&rwlock);
-        usleep(100000);
+        sleep(5);
     }
     return 0;
 }
@@ -64,7 +62,7 @@ int main()
     //1. 读写锁的初始化
     //int    pthread_rwlock_init(pthread_rwlock_t *restrict rwlock,
     //          const pthread_rwlockattr_t *restrict attr);
-    
+
     pthread_rwlock_init(&rwlock, NULL);
     for (i = 0; i < 4; i++) {
         ret = pthread_create(&wtid[i], NULL, thr_write, NULL);
@@ -74,14 +72,21 @@ int main()
         }
     }
     for (i = 0; i < 4; i++) {
-        ret = pthread_create(&wtid[i], NULL, thr_read, NULL);
+        ret = pthread_create(&rtid[i], NULL, thr_read, NULL);
         if (ret != 0) {
             printf("pthread_create error\n");
             return -1;
         }
     }
-    
+
     pthread_join(wtid[0], NULL);
+    pthread_join(wtid[1], NULL);
+    pthread_join(wtid[2], NULL);
+    pthread_join(wtid[3], NULL);
+    pthread_join(rtid[0], NULL);
+    pthread_join(rtid[1], NULL);
+    pthread_join(rtid[2], NULL);
+    pthread_join(rtid[3], NULL);
     //3. 销毁读写锁
     pthread_rwlock_destroy(&rwlock);
     return 0;
