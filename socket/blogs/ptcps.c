@@ -19,24 +19,18 @@ int Data_IO(int id)
     else if(pid==0)
     {
         //子进程
-        if(fork()==0)
+        while(1)
         {
-            //孙子进程
-            while(1)
+            char buff[1024] = {0};
+            int ret=read(id,buff,1023);
+            if(ret<0)
             {
-                char buff[1024] = {0};
-                int ret=read(id,buff,1023);
-                if(ret<0)
-                {
-                    perror("read error");
-                    close(id);
-                    exit(-1);
-                }
-                printf("client say:%s",buff);
-                memset(buff,0x00,1024);
-                scanf("%s",buff);
-                write(id,buff,sizeof(buff));
+                perror("read error");
+                close(id);
+                exit(-1);
             }
+            printf("client say:%s",buff);
+            send(id, "what\?\?!!", 8, 0);
         }
     }
     //父进程

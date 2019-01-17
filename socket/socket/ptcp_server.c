@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
     struct sockaddr_in lst_addr;
     lst_addr.sin_family = AF_INET;
     lst_addr.sin_port = htons(9000);
-    lst_addr.sin_addr.s_addr = inet_addr("192.168.122.132");
+    lst_addr.sin_addr.s_addr = inet_addr("192.168.1.100");
 
     socklen_t len = sizeof(struct sockaddr_in);
     int ret = bind(lst_fd, (struct sockaddr*)&lst_addr, len);
