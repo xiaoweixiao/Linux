@@ -21,9 +21,9 @@ void daemon_t()
     dup2(fd,0);
     dup2(fd,1);
     dup2(fd,2);
-//  close(0);
-//  close(1);
-//  close(2);
+    //  close(0);
+    //  close(1);
+    //  close(2);
 }
 int main()
 {

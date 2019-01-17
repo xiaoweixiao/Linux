@@ -47,7 +47,6 @@ int main()
         }
         //5、recv
         while(1){
-            //6、send
             char buff[1024]={0};
             int ret=recv(n_sockfd,buff,1023,0);
             if(ret<0){
@@ -56,11 +55,12 @@ int main()
             }
             printf("client %s[%d]say:%s",inet_ntoa(cli.sin_addr),ntohs(cli.sin_port),buff);
 
+            //6、send
             memset(buff,0x00,1024);
             scanf("%s",buff);
             send(n_sockfd,buff,sizeof(buff),0);
-            //7、close(sockfd)
         }
+        //7、close(sockfd)
         close(n_sockfd);
     }
 }

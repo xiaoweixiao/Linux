@@ -17,7 +17,7 @@ int main()
     struct sockaddr_in ser;
     ser.sin_family=AF_INET;
     ser.sin_port=htons(atoi("9000"));
-    ser.sin_addr.s_addr=inet_addr("192.168.117.130");
+    ser.sin_addr.s_addr=inet_addr("192.168.1.100");
     //2、连接
     socklen_t len=sizeof(struct sockaddr_in);
     if(connect(sockfd,(struct sockaddr*)&ser,len)<0)

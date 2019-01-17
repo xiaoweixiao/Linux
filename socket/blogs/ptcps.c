@@ -13,19 +13,21 @@
 
 int Data_IO(int id)
 {
-    int pid=fork();
-    if(pid<0){
-        perror("pid error");
-        return -1;
-    }else if(pid==0){
+    int pid = -1;
+    pid = fork();
+    if(pid<0)return -1;
+    else if(pid==0)
+    {
         //子进程
         if(fork()==0)
         {
-            while(1){
-                //孙子进程
-                char buff[1024]={0};
+            //孙子进程
+            while(1)
+            {
+                char buff[1024] = {0};
                 int ret=read(id,buff,1023);
-                if(ret<0){
+                if(ret<0)
+                {
                     perror("read error");
                     close(id);
                     exit(-1);
@@ -55,7 +57,7 @@ int main()
     struct sockaddr_in ser;
     ser.sin_family=AF_INET;
     ser.sin_port=htons(atoi("9000"));
-    ser.sin_addr.s_addr=inet_addr("192.168.117.130");
+    ser.sin_addr.s_addr=inet_addr("192.168.1.100");
     socklen_t len=sizeof(struct sockaddr_in);
 
     if(bind(sockfd,(struct sockaddr*)&ser,len)<0){
